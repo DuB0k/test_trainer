@@ -1,6 +1,14 @@
+# TestTrainer website
+
+This project helps user learning through the process of solving different test examns.
+The site allow user to create custom test and displays some useful statistics about the test learning experience.
+
 Home page [https://test-trainer-dub0k.c9.io/](https://test-trainer-dub0k.c9.io/)
 Admin page[https://test-trainer-dub0k.c9.io/admin](https://test-trainer-dub0k.c9.io/admin) 
 
+## Requirements
+
+This project use django1.8 and Python3.4 
 
 ## Starting django app
 
