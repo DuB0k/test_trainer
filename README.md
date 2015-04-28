@@ -23,6 +23,7 @@ This project use django1.8 and Python3.4
 ```python
      $ django-admin.py startproject testTrainer
      $ python manage.py migrate
+     $ python manage.py createsuperuser
      $ python manage.py runserver  $IP:$PORT
 ```
 #####3) Create repo
