@@ -37,45 +37,44 @@ See requirements.txt for more info
 ```
 
 ## Django steps
-#####1)Create the project:
+#####1) Create the project:
 ```python
 	$ django-admin startproject testTrainer
 ```
-#####2)Change dir to the django root directory:
+#####2) Change dir to the django root directory:
 ```python
      $ cd testTrainer
 ```
-#####3)Create tables in the database:
+#####3) Create tables in the database:
 ```python
      $ python manage.py migrate
 ```
      Note:
      The migrate command looks at the INSTALLED_APPS setting and creates any necessary database tables according to the database settings in your mysite/settings.py file and the database migrations shipped with the app
-#####4)Create app tests:
+#####4) Create app tests:
 ```python
      $ python manage.py startapp tests
 ```
-#####5)Create tests/models.py with some database content
-#####6)Install tests app editing INSTALLED_APPS in settings.py
-#####7)Create database migrations for tests app model
+#####5) Create tests/models.py with some database content
+#####6) Install tests app editing INSTALLED_APPS in settings.py
+#####7) Create database migrations for tests app model
 ```python
      $ python manage.py makemigrations tests
 ```
-#####8)Display database sentences of the new migration file created above
+#####8) Display database sentences of the new migration file created above
 ```python    
      $ python manage.py sqlmigrate tests 0001
 ```
-#####9)Migrate database
+#####9) Migrate database
 ```python 
      $ python manage.py migrate
 ```
-#####10)Create admin user
+#####10) Create admin user
 ```python 
      $ python manage.py createsuperuser
 ```
-#####11)Make the tests app modifiable in the admin
+#####11) Make the tests app modifiable in the admin
 Edit tests/admin.py
 ```python 
      admin.site.register(Test)
 ```
-
